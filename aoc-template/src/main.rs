@@ -1,7 +1,7 @@
-use std::env;
+#[macro_use]
+extern crate load_file;
+
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let file_in = load_str!(args[0]);
-    let out = "";
-    println!("{}", out);
+    let file_in = load_str!("foo.txt");
+    println!("{}", file_in);
 }
