@@ -13,9 +13,9 @@ pub enum Weapon {
 impl Weapon {
     fn get_score(&self) -> u32 {
         match self {
-            Weapon::Rock() => {1}
-            Weapon::Paper() => {2}
-            Weapon::Scissors() => {3}
+            Rock() => {1}
+            Paper() => {2}
+            Scissors() => {3}
         }
     }
     fn get_weakness(&self) -> Weapon {
